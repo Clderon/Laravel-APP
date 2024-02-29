@@ -1,0 +1,31 @@
+aside {
+    backdrop-filter: blur(10px);
+    width: 88px;
+    /* overflow: hidden; */
+    white-space: nowrap;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar-name{
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+aside .logo {
+    display: none;
+    transition: display 0.3s ease-in-out;
+}
+
+.active {
+    width: 300px;
+}
+
+aside.active .logo {
+    display: block;
+}
+
+
+aside.active .sidebar-name{
+    opacity: 1;
+    transition-delay: calc(.1s * var(--i));
+}
