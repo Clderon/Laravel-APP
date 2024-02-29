@@ -13,49 +13,37 @@
 
 
         <a href="{{ route('home') }}"
-            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out <?php if (basename($_SERVER['PHP_SELF']) == 'inicio.php') {
-                echo 'bg-[#0006]';
-            } ?> ">
+            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out {{ Route::currentRouteName() == 'home' ? 'bg-[#0006]' : '' }}">
             <i class='text-2xl bx bx-home-alt ml-5'></i>
             <span class="list-name sidebar-name" style='--i:1'> Inicio </span>
         </a>
 
         <a href="{{ route('verUsuarios') }}"
-            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out <?php if (basename($_SERVER['PHP_SELF']) == 'vernotas.php') {
-                echo 'bg-[#0006]';
-            } ?> ">
+            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out {{ Route::currentRouteName() == 'verUsuarios' ? 'bg-[#0006]' : '' }}">
             <i class='text-2xl bx bx-search ml-5'></i>
             <span class="list-name sidebar-name" style='--i:2'> Ver Notas </span>
         </a>
 
         <a href="{{ route('ingresarUsuarios') }}"
-            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out <?php if (basename($_SERVER['PHP_SELF']) == 'ingresarnotas.php') {
-                echo 'bg-[#0006]';
-            } ?> ">
+            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out  {{ Route::currentRouteName() == 'ingresarUsuarios' ? 'bg-[#0006]' : '' }}">
             <i class='text-2xl bx bx-user-plus ml-5'></i>
             <span class="list-name sidebar-name" style='--i:3'> Ingresar Notas </span>
         </a>
 
         <a href="{{ route('editarUsuarios') }}"
-            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out <?php if (basename($_SERVER['PHP_SELF']) == 'editarnotas.php') {
-                echo 'bg-[#0006]';
-            } ?> ">
+            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out  {{ Route::currentRouteName() == 'editarUsuarios' ? 'bg-[#0006]' : '' }}">
             <i class='text-2xl bx bx-edit-alt ml-5'></i>
             <span class="list-name sidebar-name" style='--i:4'> Editar Notas </span>
         </a>
 
         <a href="{{ route('eliminarUsuarios') }}"
-            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out <?php if (basename($_SERVER['PHP_SELF']) == 'eliminarnotas.php') {
-                echo 'bg-[#0006]';
-            } ?> ">
+            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out {{ Route::currentRouteName() == 'eliminarUsuarios' ? 'bg-[#0006]' : '' }}">
             <i class='text-2xl bx bx-user-x ml-5'></i>
             <span class="list-name sidebar-name" style='--i:5'> Eliminar Notas </span>
         </a>
 
         <a href="listaaprobados.php"
-            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out <?php if (basename($_SERVER['PHP_SELF']) == 'listaaprobados.php') {
-                echo 'bg-[#0006]';
-            } ?> ">
+            class="text-xl h-12 px-4 rounded-md flex justify-start gap-7 items-center hover:bg-[#0006] transition-all duration-300 ease-in-out ">
             <i class='text-2xl bx bx-list-check ml-5'></i>
             <span class="list-name sidebar-name" style='--i:6'> Listar aprobados </span>
         </a>

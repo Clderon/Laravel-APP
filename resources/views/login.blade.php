@@ -30,6 +30,11 @@
                     <div class="header-container  md:mb-10">
                         <h2 class="font-bold text-4xl text-gray-800 mb-2 text-center">Login</h2>
                     </div>
+
+                    @if(isset($error))
+                        <p class="error border-none text-sm text-center bg-red-400 font-bold p-2 rounded-lg text-white border mt-3 md:mt-5">{{ $error }}</p>
+                    @endif
+
     
                     <form action="{{ route('validate') }}" class=" flex flex-col gap-4 mt-10 md:mt-9" method="post">
                         @csrf

@@ -3,7 +3,6 @@
 use App\Http\Controllers\homeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Middleware\Authenticate;
 
 /*
 |                    spell:disable
